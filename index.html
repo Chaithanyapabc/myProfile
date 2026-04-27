@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div id="progress-bar"></div>
 
     <!-- HERO SECTION -->
 
@@ -41,30 +42,18 @@
                 </a>
 
             </div>
-            <div class="flex flex-wrap gap-6 justify-center lg:justify-start text-sm font-bold">
 
-                <span>100 Github commits</span>
-                <span>100 LeetCode Questions Solved</span>
-                <span>5 live projects completed</span>
-
-            </div>
+            <div id="developer-status" class="flex flex-wrap gap-3 justify-left mt-4"></div>
 
         </div>
 
         <div class="order-1 lg:order-2 w-full lg:w-96 max-w-sm mx-auto lg:mx-0">
+
             <img src="assets/images/myphoto.jpeg" alt="My photo"
                 class="aspect-square w-full rounded shadow-lg mx-auto lg:mx-0 hover:ring-blue-500 transition-all duration-300 hover:scale-[1.02]"
                 loading="lazy">
 
         </div>
-
-    </section>
-    <section class="py-16 text-center">
-        <h2 class="text-3xl font-bold mb-6">GitHub Stats</h2>
-
-        <div id="github-stats" class="mb-8"></div>
-
-        <div id="github-repos" class="grid md:grid-cols-2 gap-6 px-6"></div>
 
     </section>
 
@@ -89,6 +78,10 @@
 
             </ul>
             <button id="theme-toggle" class="bg-gray-200 px-4 py-2 font-bold">Theme</button>
+            <select id="language-switcher" class="border px-3 py-2 rounded">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+            </select>
             <a href="#contact" class="bg-red-400 hover:bg-green-500 rounded transition-all duration-300 px-8 py-3">
                 Let's talk
             </a>
@@ -119,6 +112,14 @@
 
                 <input id="project-search" type="text" placeholder="Search projects..."
                     class="border rounded px-6 py-3 w-full max-w-md">
+                <!--Project sort-->
+                <select id="project-sort">
+                    <option value="default">Sort By</option>
+                    <option value="name-asc">Name (A → Z)</option>
+                    <option value="name-desc">Name (Z → A)</option>
+                    <option value="status">Status</option>
+                </select>
+
 
             </div>
 
@@ -127,10 +128,20 @@
             <div id="project-filters" class="flex flex-wrap justify-center gap-4 mb-12">
             </div>
 
+            <div id="filter-buttons" class="mb-4">
+                <button class="filter-btn active" data-category="All">All</button>
+                <button class="filter-btn" data-category="Frontend">Frontend</button>
+                <button class="filter-btn" data-category="MERN">MERN</button>
+                <button class="filter-btn" data-category="JavaScript">JavaScript</button>
+            </div>
+            <!---Project count--->
+            <p id="project-count" class="mb-3 text-gray-600"></p>
+
             <!-- Dynamic container for projects -->
 
             <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             </div>
+
 
         </div>
 
@@ -202,8 +213,6 @@
 
                     <input id="contact-email" type="email" placeholder="email@website.com"
                         class="w-full border rounded px-4 py-3">
-                    <textarea id="contact-message" placeholder="Your Message" class="border p-2 w-full"
-                        required></textarea>
 
                     <p id="form-message" class="text-sm text-red-500"></p>
 
@@ -220,15 +229,13 @@
                     </div>
 
                 </form>
-                <!-- Submission Status -->
-                <p id="form-status" class="mt-4 text-sm"></p>
 
             </div>
 
         </div>
 
     </div>
-
+    <button id="backToTop">↑</button>
     <!-- MAIN JS ENTRY -->
 
     <script src="js/data/projects.js"></script>
@@ -239,25 +246,14 @@
     <script src="js/features/theme-toggle.js"></script>
     <script src="js/features/project-filter.js"></script>
     <script src="js/features/project-search.js"></script>
-    <script src="js/features/developer-stats.js"></script>
-    <script src="js/features/language-switcher.js"></script>
-    <script src="js/features/github-api.js"></script>
-    <script src="js/features/contact-api.js"></script>
-    <script type="module" src="js/features/config-firebase.js"></script>
-    <script src="js/features/dynamic-greeting.js"></script>
-    <script type="module" src="js/main.js"></script>
+    <script src="js/features/developer-status.js"></script>
+    <script src="js/features/languge-switcher.js"></script>
+    <script src="js/features/scroll-process.js"></script>
+    <script src="js/features/scroll-spy.js"></script>
+    <script src="js/features/back-to-top.js"></script>
+    <script src="js/features/project-count.js"></script>
+    <script src="JS/features/script.js"></script>
     <script src="js/main.js"></script>
-
-    <button id="backToTopBtn" aria-label="Back to top" class="fixed bottom-8 right-8 
-           bg-blue-500 text-white 
-           w-12 h-12 rounded-full 
-           shadow-lg 
-           flex items-center justify-center 
-           text-lg font-bold
-           opacity-0 pointer-events-none
-           transition-all duration-300">
-        ↑
-    </button>
 
 </body>
 
