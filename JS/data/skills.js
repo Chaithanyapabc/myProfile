@@ -22,5 +22,35 @@ const skillsData = [
     name: "MongoDB",
     shortLabel: "M",
     description: "Document-based database design and backend integration."
+  },
+  {
+    id: 4,
+    name: "Node.js",
+    shortLabel: "N",
+    description: "Document-based database design and backend integration."
+  },
+  {
+    id: 5,
+    name: "Node.js",
+    shortLabel: "N",
+    description: "Server-side development, REST APIs, and asynchronous programming."
+  },
+  {
+    id: 6,
+    name: "Express.js",
+    shortLabel: "E",
+    description: "Backend framework for building APIs, routing, and middleware handling."
+  },
+  {
+    id: 7,
+    name: "HTML",
+    shortLabel: "H",
+    description: "Semantic structure, accessibility, and modern web page markup."
+  },
+  {
+    id: 8,
+    name: "CSS",
+    shortLabel: "C",
+    description: "Styling, layouts, animations, and responsive design principles."
   }
 ];

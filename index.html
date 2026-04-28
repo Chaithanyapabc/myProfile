@@ -112,14 +112,6 @@
 
                 <input id="project-search" type="text" placeholder="Search projects..."
                     class="border rounded px-6 py-3 w-full max-w-md">
-                <!--Project sort-->
-                <select id="project-sort">
-                    <option value="default">Sort By</option>
-                    <option value="name-asc">Name (A → Z)</option>
-                    <option value="name-desc">Name (Z → A)</option>
-                    <option value="status">Status</option>
-                </select>
-
 
             </div>
 
@@ -134,6 +126,15 @@
                 <button class="filter-btn" data-category="MERN">MERN</button>
                 <button class="filter-btn" data-category="JavaScript">JavaScript</button>
             </div>
+
+            <!-- SORT DROPDOWN (PUT HERE) -->
+            <select id="project-sort">
+                <option value="default">Sort By</option>
+                <option value="name-asc">Name (A → Z)</option>
+                <option value="name-desc">Name (Z → A)</option>
+                <option value="status">Status</option>
+            </select>
+
             <!---Project count--->
             <p id="project-count" class="mb-3 text-gray-600"></p>
 
@@ -252,7 +253,7 @@
     <script src="js/features/scroll-spy.js"></script>
     <script src="js/features/back-to-top.js"></script>
     <script src="js/features/project-count.js"></script>
-    <script src="JS/features/script.js"></script>
+    <script src="JS/features/project-sort.js"></script>
     <script src="js/main.js"></script>
 
 </body>
