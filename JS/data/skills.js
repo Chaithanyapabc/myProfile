@@ -31,24 +31,18 @@ const skillsData = [
   },
   {
     id: 5,
-    name: "Node.js",
-    shortLabel: "N",
-    description: "Server-side development, REST APIs, and asynchronous programming."
-  },
-  {
-    id: 6,
     name: "Express.js",
     shortLabel: "E",
     description: "Backend framework for building APIs, routing, and middleware handling."
   },
   {
-    id: 7,
+    id: 6,
     name: "HTML",
     shortLabel: "H",
     description: "Semantic structure, accessibility, and modern web page markup."
   },
   {
-    id: 8,
+    id: 7,
     name: "CSS",
     shortLabel: "C",
     description: "Styling, layouts, animations, and responsive design principles."
