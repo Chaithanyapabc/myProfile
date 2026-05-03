@@ -70,3 +70,161 @@ nav a.active {
   color: white;
   border-color: #2563eb;
 }
+
+
+/* Section */
+.experience {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.experience h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+/* Layout */
+.exp-container {
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* LEFT */
+.exp-left {
+  text-align: right;
+}
+
+.exp-left img {
+  width: 160px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.exp-left h3 {
+  font-size: 24px;
+}
+
+.exp-left p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* CENTER LINE */
+.exp-line {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.exp-line::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #555;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background: #00aaff;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+}
+
+/* RIGHT */
+.exp-right {
+  text-align: left;
+}
+
+.exp-right h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.exp-right p {
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 15px;
+  max-width: 400px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .exp-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .exp-left {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .exp-line {
+    display: none;
+  }
+
+  .exp-right {
+    text-align: center;
+  }
+}
+
+/*Education*/
+
+.education-section {
+  padding: 60px 20px;
+  background: #0f172a;
+  color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.education-container {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+}
+
+.education-item {
+  background: #1e293b;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #38bdf8;
+  transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+}
+
+.education-degree {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.education-institute {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.education-year {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.education-score {
+  margin-top: 8px;
+  font-size: 0.95rem;
+}

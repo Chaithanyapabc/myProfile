@@ -47,7 +47,7 @@ function renderProjects(data) {
 
         const liveLink = document.createElement("a");
         liveLink.href = project.liveDemo;
-        liveLink.textContent = "Live";
+        liveLink.textContent = "Source Code";
         liveLink.className = "text-blue-500 underline";
 
         const githubLink = document.createElement("a");

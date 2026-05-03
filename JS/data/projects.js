@@ -1,25 +1,23 @@
 const projectsData = [
   {
     id: 1,
-    name: "Movie Time",
+    name: "Book My Show Clone",
     category: "MERN",
     description:
-      "Full stack movie ticket booking application with AI-powered smart movie suggestions.",
-    technologies: ["ReactJS", "ExpressJS", "MongoDB"],
-    status: "Live",
-    liveDemo: "#",
-    github: "#"
+      "A comprehensive movie ticket booking platform featuring a seamless checkout flow, dynamic admin management, and an AI-powered engine for personalized movie suggestions.",
+    technologies: ["ReactJS", "Node.js" , "ExpressJS", "MongoDB"],
+    liveDemo: "https://github.com/Chaithanyapabc/MERN_Stu_FebMay26Mys/tree/main/Projects/Guided%20Project/BookMyShowClone",
+    github: "https://github.com/Chaithanyapabc/MERN_Stu_FebMay26Mys/tree/main/Projects/Guided%20Project/BookMyShowClone"
   },
   {
     id: 2,
-    name: "Gola",
-    category: "MERN",
+    name: "Hospital Management System",
+    category: "Frontend",
     description:
-      "Cab booking platform that helps users quickly book rides for daily travel.",
-    technologies: ["ReactJS", "ExpressJS", "MongoDB"],
-    status: "Live",
-    liveDemo: "#",
-    github: "#"
+      "A fully responsive healthcare platform featuring doctor scheduling, service overviews, and patient inquiry systems with a modern, mobile-first UI.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveDemo: "https://github.com/Chaithanyapabc/Hospital-Management-System",
+    github: "https://github.com/Chaithanyapabc/Hospital-Management-System"
   },
   {
     id: 3,
@@ -28,18 +26,16 @@ const projectsData = [
     description:
       "Responsive personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "Tailwind CSS", "JavaScript"],
-    status: "Live",
-    liveDemo: "#",
-    github: "#"
+    liveDemo: "https://github.com/Chaithanyapabc/myProfile",
+    github: "https://github.com/Chaithanyapabc/myProfile"
   },
   {
     id: 4,
-    name: "Developer Stats Dashboard",
-    category: "JavaScript",
+    name: "AI-Based Emotion Detection and Personalized Song Recomendation System",
+    category: "Frontend , Backend",
     description:
-      "Dynamic dashboard that loads developer statistics and profile insights using Fetch API.",
-    technologies: ["JavaScript", "Fetch API", "JSON"],
-    status: "Demo",
+      "An innovative AI application that uses real-time facial recognition to detect user emotions and provide personalized music recommendations via the Spotify/YouTube API.",
+    technologies: ["Python", "TensorFlow", "OpenCV", "ReactJS", "Flask"],
     liveDemo: "#",
     github: "#"
   }

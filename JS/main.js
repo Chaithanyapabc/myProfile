@@ -14,4 +14,9 @@ document.addEventListener("DOMContentLoaded",function(){
     renderProjects(data);
     initProjectFilter();
     initProjectSort();
-})
+    renderEducation();
+    renderProjects(sorted);
+    typeEffect();
+    renderGreeting();
+    initGeolocation();
+});

@@ -9,6 +9,7 @@
     <title>P Chaithanya</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <link rel="stylesheet" href="css/custom.css">
 
@@ -23,12 +24,20 @@
         class="min-h-screen flex flex-col lg:flex-row lg:items-center lg:justify-between px-8 lg:px-16 py-20 gap-12 lg:gap-20">
 
         <div class="order-2 lg:order-1 flex-1 lg:max-w-lg text-center lg:text-left">
-
+            
             <h1 class="text-5xl mb-6">P Chaithanya</h1>
-
-            <p class="text-xl lg:text-2xl text-slate-600 font-bold mb-10 max-w-md mx-auto lg:mx-0">
-                Full-Stack developer | MERN enthusiast | Competitive Programmer
-            </p>
+            <h2 id="greeting"></h2>
+            <h1>I am <span id="typing"></span></h1>
+            
+            <div class="social-icons mt-8">
+                <a href="https://github.com/Chaithanyapabc" target="_blank" rel="noopener" class="text-white me-5 fs-6">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/p-chaithanya-a33936309" target="_blank" rel="noopener"
+                    class="text-white fs-6">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
 
             <div
                 class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center lg:items-start mb-8">
@@ -37,7 +46,8 @@
                     View Projects
                 </a>
 
-                <a href="#resume" class="bg-blue-400 hover:bg-green-500 px-10 py-4 rounded shadow-xl">
+                <a href="assets\P Chaithanya cv (1).pdf"
+                    class="bg-blue-400 hover:bg-green-500 px-10 py-4 rounded shadow-xl">
                     Download Resume
                 </a>
 
@@ -73,6 +83,8 @@
                 <li><a href="#projects" class="text-lg font-bold hover:text-blue-600">Projects</a></li>
 
                 <li><a href="#experience" class="text-lg font-bold hover:text-blue-600">Experience</a></li>
+
+                <li><a href="#education" class="text-lg font-bold hover:text-blue-600">Education</a></li>
 
                 <li><a href="#skills" class="text-lg font-bold hover:text-blue-600">Skills</a></li>
 
@@ -125,15 +137,14 @@
                 <button class="filter-btn" data-category="Frontend">Frontend</button>
                 <button class="filter-btn" data-category="MERN">MERN</button>
                 <button class="filter-btn" data-category="JavaScript">JavaScript</button>
-            </div>
 
-            <!-- SORT DROPDOWN (PUT HERE) -->
-            <select id="project-sort">
-                <option value="default">Sort By</option>
-                <option value="name-asc">Name (A → Z)</option>
-                <option value="name-desc">Name (Z → A)</option>
-                <option value="status">Status</option>
-            </select>
+                <!-- SORT DROPDOWN (PUT HERE) -->
+                <select id="sortProjects">
+                    <option value="default">Sort By</option>
+                    <option value="az">A-Z</option>
+                    <option value="status">Status</option>
+                </select>
+            </div>
 
             <!---Project count--->
             <p id="project-count" class="mb-3 text-gray-600"></p>
@@ -149,68 +160,42 @@
     </section>
 
     <!-- EXPERIENCE -->
-
     <section id="experience" class="py-24 px-8 lg:px-16">
-        <!--Experience-->
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl lg:text-5xl text-white-700 text-center mb-20">Education</h2>
-            <!--Education-->
-            <div class="space-y-8">
-                <!--Card 1-->
-                <div class="group shadow-2xl rounded-3xl p-8 hover:shadow-4xl transition-all relative overflow-hidden">
-                    <div class="absolute insert-0 bg-slate-700 opacity-0 group-hover: opacity-100 transition-opacity">
-                    </div>
-                    <div class="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-                        <div class="flex items-center gap-4">
-                            <div class="w-16 h-16 bg-emarald-400 rounded flex items-center justify-center shadow-4xl">
-                                <span class="text-white font-bold">VTU</span>
-                            </div>
-                            <div class="text-semibold text-2xl">B.E in Computer Science</div>
-                        </div>
-                        <p class="text-md font-semibold">CIT Mandya</p>
-                        <p class="text-md font-semibold text-right">CGPA:7.8</p>
-                        <div class="text-md font-semibold text-right px-4">
-                            2026
-                        </div>
-                    </div>
-                </div>
-                <!--Card 2-->
-                <div class="group shadow-2xl rounded-3xl p-8 hover:shadow-4xl transition-all relative overflow-hidden">
-                    <div class="absolute insert-0 bg-slate-700 opacity-0 group-hover: opacity-100 transition-opacity">
-                    </div>
-                    <div class="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-                        <div class="flex items-center gap-4">
-                            <div class="w-16 h-16 bg-emarald-400 rounded flex items-center justify-center shadow-2xl">
-                                <span class="text-white font-bold">Karnataka Board</span>
-                            </div>
-                            <div class="text-semibold text-2xl">Class 12</div>
-                        </div>
-                        <p class="text-md font-semibold">Vidya Chethana Techno PU College Nelamangala,Benglore Rural</p>
-                        <p class="text-md font-semibold text-right">Percentage:73.2%</p>
-                        <div class="text-md font-semibold text-right px-4">
-                            2022
-                        </div>
-                    </div>
-                </div>
-                <!--Card 3-->
-                <div class="group shadow-2xl rounded-3xl p-8 hover:shadow-4xl transition-all relative overflow-hidden">
-                    <div class="absolute insert-0 bg-slate-700 opacity-0 group-hover: opacity-100 transition-opacity">
-                    </div>
-                    <div class="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-                        <div class="flex items-center gap-4">
-                            <div class="w-16 h-16 bg-emarald-400 rounded flex items-center justify-center shadow-2xl">
-                                <span class="text-white font-bold">Karnataka Board</span>
-                            </div>
-                            <div class="text-semibold text-2xl">SSLC</div>
-                        </div>
-                        <p class="text-md font-semibold">Nirmala English High School Pandavapura,Mandya</p>
-                        <p class="text-md font-semibold text-right">percentage:81.44%</p>
-                        <div class="text-md font-semibold text-right px-4">
-                            2020
-                        </div>
-                    </div>
-                </div>
+        <h2 class="text-4xl lg:text-5xl text-white-700 text-center mb-20">Experience</h2>
+
+        <div class="exp-container">
+
+            <!-- LEFT SIDE (Logo + Company) -->
+            <div class="exp-center">
+                <img src="./assets/abc.jpg" alt="ABC Logo">
+                <h3 class="my-2">ABC</h3>
+                <p>Feb - Present</p>
             </div>
+
+            <!-- CENTER LINE -->
+            <div class="exp-line">
+                <span class="dot"></span>
+            </div>
+
+            <!-- RIGHT SIDE (Details) -->
+            <div class="exp-right">
+                <h3>MERN Full-Stack Trainee</h3>
+                <p>
+                    Built full-stack web applications using MongoDB, Express.js, React.js, and Node.js.
+                    Developed REST APIs, implemented secure authentication, and integrated responsive frontends with
+                    scalable backend systems while maintaining clean, efficient code.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="education-section">
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-container" id="educationContainer">
+            <!-- JS will render here -->
         </div>
     </section>
 
@@ -284,6 +269,11 @@
             </div>
 
         </div>
+        <footer class="footer bg-black text-center text-white py-3">
+            <div class="container">
+                <p>&copy; 2026 P Chaithanya. All rights reserved.</p>
+            </div>
+        </footer>
 
     </div>
     <button id="backToTop">↑</button>
@@ -304,6 +294,12 @@
     <script src="js/features/back-to-top.js"></script>
     <script src="js/features/project-count.js"></script>
     <script src="JS/features/project-sort.js"></script>
+    <script src="JS/data/education.js"></script>
+    <script src="JS/features/education-render.js"></script>
+    <script src="JS/features/typing.js"></script>
+    <script src="JS/features/contact-save.js"></script>
+    <script src="JS/features/greeting.js"></script>
+    <script src="JS/features/geo.js"></script>
     <script src="js/main.js"></script>
 
 </body>
