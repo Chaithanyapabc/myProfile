@@ -1,47 +1,58 @@
-function renderSkills(){
-    const skillsContainer=document.getElementById("skills-container")
-    if(!skillsContainer){
-        console.log("skills container not found");
-        return;
-    }
+function renderSkills() {
+  const skillsContainer = document.getElementById("skills-container");
 
+  if (!skillsContainer) {
+    console.log("Skills container not found");
+    return;
+  }
 
-    skillsContainer.innerHTML="";
-    skillsData.forEach(function(skill){
-        //to create an outer card
-        const card=document.createElement("div");
-        card.className="p-8 text-center bg-white rounded-3xl shadow-lg";
+  skillsContainer.innerHTML = "";
 
+  skillsData.forEach((skill) => {
 
-        //create icon
-        const iconBox=document.createElement("div");
-        iconBox.className="w-20 h-20 mx-auto mb-4 bg-green-900 rounded-2xl flex item-center justify-center ";
+    // 🔷 Decent Professional Card
+    const card = document.createElement("div");
+    card.className =
+      "w-full max-w-xs p-6 text-center rounded-2xl " +
+      "bg-gradient-to-br from-slate-50 to-cyan-100 " +
+      "border border-cyan-200 shadow-sm " +
+      "hover:shadow-lg hover:-translate-y-1 " +
+      "transition-all duration-300";
 
-        //create icon text
-        const iconText=document.createElement("span");
-        iconText.className="text-2xl text-white font-bold";
-        iconText.textContent=skill.shortLabel;
+    // 🔷 Icon Box (Soft Aqua)
+    const iconBox = document.createElement("div");
+    iconBox.className =
+      "w-14 h-14 mx-auto mb-4 " +
+      "bg-cyan-500 text-white " +
+      "rounded-xl flex items-center justify-center shadow";
 
-        //puts icontext inside iconbox
-        iconBox.appendChild(iconText);
+    // 🔷 Icon Text
+    const iconText = document.createElement("span");
+    iconText.className = "text-lg font-bold";
+    iconText.textContent = skill.shortLabel;
 
-        //create the skill name
-        const skillName=document.createElement("h3");
-        skillName.className="text-xl font-bold mb-2";
-        skillName.textContent=skill.name;
+    iconBox.appendChild(iconText);
 
-        //create skill description
-        const skillDescription=document.createElement("p");
-        skillDescription.className="text-sm";
-        skillDescription.textContent=skill.description;
+    // 🔷 Skill Name
+    const skillName = document.createElement("h3");
+    skillName.className = "text-lg font-semibold text-gray-800 mb-1";
+    skillName.textContent = skill.name;
 
-        //appending all child elements to card
-        card.appendChild(iconBox);
-        card.appendChild(skillName);
-        card.appendChild(skillDescription);
-        //append card to skills container
-        skillsContainer.appendChild(card);
-    });
-    console.log("skills rendered successfully");
-    
+    // 🔷 Description
+    const skillDescription = document.createElement("p");
+    skillDescription.className = "text-sm text-gray-600 leading-relaxed";
+    skillDescription.textContent = skill.description;
+
+    // 🔷 Append Elements
+    card.appendChild(iconBox);
+    card.appendChild(skillName);
+    card.appendChild(skillDescription);
+
+    skillsContainer.appendChild(card);
+  });
+
+  console.log("Skills rendered successfully");
 }
+
+// Run
+renderSkills();

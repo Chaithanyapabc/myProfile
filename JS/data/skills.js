@@ -48,3 +48,26 @@ const skillsData = [
     description: "Styling, layouts, animations, and responsive design principles."
   }
 ];
+
+// const skillsData = [
+//   {
+//     name: "React.js",
+//     shortLabel: "R",
+//     description: "Building scalable and dynamic UI with reusable components"
+//   },
+//   {
+//     name: "Node.js",
+//     shortLabel: "N",
+//     description: "Backend development with REST APIs and server-side logic"
+//   },
+//   {
+//     name: "MongoDB",
+//     shortLabel: "M",
+//     description: "NoSQL database for flexible and scalable data storage"
+//   },
+//   {
+//     name: "Express.js",
+//     shortLabel: "E",
+//     description: "Lightweight framework for building APIs efficiently"
+//   }
+// ];
