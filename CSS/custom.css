@@ -43,7 +43,7 @@ nav a.active {
     font-size: 18px;
     border: none;
     border-radius: 50%;
-    background:  rgb(24, 17, 43);
+    background:  #2563eb;
     color: white;
     cursor: pointer;
     display: none;
@@ -52,7 +52,7 @@ nav a.active {
 }
 
 #backToTop:hover {
-    background:  rgb(24, 17, 43);
+    background: #2563eb ;
     transform: scale(1.1);
 }
 
@@ -66,9 +66,9 @@ nav a.active {
 }
 
 .filter-btn.active {
-  background:  rgb(24, 17, 43);
+  background:  #2563eb;
   color: white;
-  border-color:  rgb(24, 17, 43);
+  border-color:  #2563eb;
 }
 
 

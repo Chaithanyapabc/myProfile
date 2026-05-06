@@ -390,97 +390,10 @@
         </div>
     </section>
 
-    <!-- CONTACT MODAL -->
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="py-24 px-6 bg-white text-black">
-
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-
-            <!-- LEFT SIDE -->
-            <div>
-                <h2 class="text-4xl lg:text-5xl font-bold mb-6">Contact Me</h2>
-                <p class="text-gray-600 mb-6">
-                    Let's connect and build something impactful. Drop your message and I'll get back ASAP.
-                </p>
-
-                <!-- EMAIL -->
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="text-2xl">📧</div>
-                    <div>
-                        <p class="font-semibold">Email</p>
-                        <p class="text-gray-500">pchaithanya684@gmail.com</p>
-                    </div>
-                </div>
-
-                <!-- CTA BUTTON -->
-                <button id="open-contact-modal"
-                    class="mt-6 px-6 py-3 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700 transition shadow">
-                    Send Message
-                </button>
-            </div>
-
-            <!-- RIGHT SIDE (FORM INLINE - OPTIONAL) -->
-            <form id="contactForm" class="space-y-4">
-
-                <input id="name" type="text" placeholder="Your Name" class="w-full border rounded-lg px-4 py-3"
-                    required>
-
-                <input id="email" type="email" placeholder="Your Email" class="w-full border rounded-lg px-4 py-3"
-                    required>
-
-                <textarea id="message" placeholder="Your Message" class="w-full border rounded-lg px-4 py-3 h-32"
-                    required></textarea>
-
-                <p id="form-error" class="text-red-500 text-sm"></p>
-
-                <button type="submit"
-                    class="w-full bg-cyan-600 text-white py-3 rounded-lg hover:bg-cyan-700 transition">
-                    Send Message
-                </button>
-
-            </form>
-
-        </div>
-
-    </section>
-
-    <!-- CONTACT MODAL -->
-    <div id="contact-modal"
-        class="fixed inset-0 hidden bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
-
-        <div class="bg-white w-full max-w-md p-6 rounded-xl shadow-xl relative">
-
-            <!-- CLOSE -->
-            <button id="close-contact-modal" class="absolute top-4 right-4 text-xl font-bold">×</button>
-
-            <h3 class="text-2xl font-bold mb-4">Send Message</h3>
-
-            <form id="modal-contact-form" class="space-y-4">
-
-                <input id="modal-name" type="text" placeholder="Your Name" class="w-full border rounded px-4 py-2"
-                    required>
-
-                <input id="modal-email" type="email" placeholder="Your Email" class="w-full border rounded px-4 py-2"
-                    required>
-
-                <textarea id="modal-message" placeholder="Your Message" class="w-full border rounded px-4 py-2 h-28"
-                    required></textarea>
-
-                <button type="cancel" class="w-full bg-cyan-600 text-white py-2 rounded hover:bg-cyan-700">
-                    Cancel
-                </button>
-                <button type="submit" class="w-full bg-cyan-600 text-white py-2 rounded hover:bg-cyan-700">
-                    Submit
-                </button>
-
-            </form>
-
-        </div>
-    </div>
+    <!--Contact Model-->
 
     <button id="modal-trigger"
-        class="fixed bottom-8 right-8 w-16 h-16 bg-cyan-700 text-white rounded-full shadow-2xl flex items-center justify-center text-2xl font-bold">
+        class="fixed bottom-8 right-8 w-16 h-16 bg-cyan-600 text-white rounded-full shadow-2xl flex items-center justify-center text-2xl font-bold">
         ☏
     </button>
 
@@ -503,33 +416,98 @@
 
                 <form id="contact-form" class="p-8 space-y-4">
 
-                    <input id="contact-name" type="text" placeholder="Your name"
-                        class="w-full border rounded px-4 py-3">
+                    <!-- NAME -->
+                    <input id="contact-name" type="text" placeholder="Your name" class="w-full border rounded px-4 py-3"
+                        required>
 
+                    <!-- EMAIL -->
                     <input id="contact-email" type="email" placeholder="email@website.com"
-                        class="w-full border rounded px-4 py-3">
+                        class="w-full border rounded px-4 py-3" required>
 
+                    <!-- MESSAGE -->
+                    <textarea id="contact-message" placeholder="Your message"
+                        class="w-full border rounded px-4 py-3 h-28 resize-none" required></textarea>
+
+                    <!-- ERROR MESSAGE -->
                     <p id="form-message" class="text-sm text-red-500"></p>
 
+                    <!-- BUTTONS -->
                     <div class="flex flex-col sm:flex-row gap-4 pt-4">
 
-                        <button type="button" id="form-cancel" class="flex-1 font-bold py-4 px-6">
+                        <button type="button" id="form-cancel"
+                            class="flex-1 font-bold py-4 px-6 bg-gray-200 rounded hover:bg-gray-300">
                             Cancel
                         </button>
 
-                        <button type="submit" class="flex-1 font-bold py-4 px-6">
+                        <button type="submit"
+                            class="flex-1 font-bold py-4 px-6 bg-cyan-600 text-white rounded hover:bg-cyan-700">
                             Submit
                         </button>
 
                     </div>
 
                 </form>
-
             </div>
 
         </div>
 
     </div>
+
+    <!-- ✅ SUCCESS TOAST (ADD HERE) -->
+    <div id="success-toast"
+        class="fixed bottom-6 right-6 hidden bg-green-500 text-white px-6 py-3 rounded shadow-lg z-50">
+        Message sent successfully 🚀
+    </div>
+
+    <!-- 🔻 FOOTER -->
+    <footer class="bg-[#18112B] text-gray-300 py-12 mt-20">
+
+        <div class="max-w-7xl mx-auto px-6 text-center">
+
+            <!-- Name / Branding -->
+            <h2 class="text-2xl font-bold text-white mb-2">
+                P Chaithanya
+            </h2>
+
+            <p class="mb-6 text-gray-400">
+                Building scalable web experiences 🚀
+            </p>
+
+            <!-- Social Links -->
+            <div class="flex justify-center gap-6 text-2xl mb-6">
+
+                <a href="https://github.com/Chaithanyapabc" target="_blank" class="hover:text-purple-400 transition">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/p-chaithanya-a33936309" target="_blank"
+                    class="hover:text-purple-400 transition">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:pchaithanya684@gmail.com" class="hover:text-purple-400 transition">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+            </div>
+
+            <!-- Contact Info -->
+            <p class="text-sm text-gray-400 mb-4">
+                📧 pchaithanya684@gmail.com
+            </p>
+
+            <!-- Divider -->
+            <div class="border-t border-purple-800 my-6"></div>
+
+            <!-- Copyright -->
+            <p class="text-sm text-gray-500">
+                © 2026 P Chaithanya. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
     <button id="backToTop">↑</button>
     <!-- MAIN JS ENTRY -->
 
