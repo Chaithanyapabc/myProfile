@@ -10,6 +10,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     <link rel="stylesheet" href="css/custom.css">
 
@@ -67,23 +68,23 @@
 
     </section> -->
 
-
+<!-- 
 <body class="bg-gradient-to-br from-slate-50 via-white to-cyan-50 text-gray-800">
 
-    <!-- 🔷 Progress Bar -->
+    <!-- 🔷 Progress Bar --
     <div id="progress-bar" class="fixed top-0 left-0 h-1 bg-cyan-500 w-0 z-50"></div>
 
-    <!-- 🔷 NAVBAR -->
+    <!-- 🔷 NAVBAR --
     <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-gray-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-            <!-- Logo -->
+            <!-- Logo --
             <a href="#"
                 class="text-2xl font-bold bg-gradient-to-r from-cyan-600 to-blue-500 bg-clip-text text-transparent">
                 PC
             </a>
 
-            <!-- Links -->
+            <!-- Links --
             <ul class="hidden md:flex items-center gap-10">
                 <li><a href="#projects" class="font-medium hover:text-cyan-600 transition">Projects</a></li>
                 <li><a href="#experience" class="font-medium hover:text-cyan-600 transition">Experience</a></li>
@@ -91,7 +92,7 @@
                 <li><a href="#skills-container" class="font-medium hover:text-cyan-600 transition">Skills</a></li>
             </ul>
 
-            <!-- Actions -->
+            <!-- Actions --
             <div class="flex items-center gap-4">
                 <button id="theme-toggle" class="px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition text-sm">
                     Theme
@@ -104,7 +105,7 @@
             </div>
 
         </div>
-    </nav>
+    </nav> -->
 
     <!-- 🔷 HERO SECTION -->
     <section class="min-h-screen flex flex-col lg:flex-row items-center justify-between px-8 lg:px-16 py-20 gap-12">
@@ -177,6 +178,45 @@
 </body>
 <!-- NAVBAR -->
 
+
+<body class="bg-gradient-to-br from-slate-50 via-white to-cyan-50 text-gray-800">
+
+    <!-- 🔷 Progress Bar -->
+    <div id="progress-bar" class="fixed top-0 left-0 h-1 bg-cyan-500 w-0 z-50"></div>
+
+    <!-- 🔷 NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="#"
+                class="text-2xl font-bold bg-gradient-to-r from-cyan-600 to-blue-500 bg-clip-text text-transparent">
+                PC
+            </a>
+
+            <!-- Links -->
+            <ul class="hidden md:flex items-center gap-10">
+                <li><a href="#projects" class="font-medium hover:text-cyan-600 transition">Projects</a></li>
+                <li><a href="#experience" class="font-medium hover:text-cyan-600 transition">Experience</a></li>
+                <li><a href="#education" class="font-medium hover:text-cyan-600 transition">Education</a></li>
+                <li><a href="#skills-container" class="font-medium hover:text-cyan-600 transition">Skills</a></li>
+            </ul>
+
+            <!-- Actions -->
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition text-sm">
+                    Theme
+                </button>
+
+                <a href="#contact"
+                    class="px-6 py-2 rounded-lg bg-cyan-600 text-white hover:bg-cyan-700 transition shadow">
+                    Let's Talk
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
 <!-- <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b shadow-lg">
 
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -243,23 +283,24 @@
             <button class="filter-btn active" data-category="All">All</button>
             <button class="filter-btn" data-category="Frontend">Frontend</button>
             <button class="filter-btn" data-category="MERN">MERN</button>
-            <button class="filter-btn" data-category="JavaScript">JavaScript</button>
+            <button class="filter-btn" data-category="AI/ML">AI/ML</button>
+            <button class="filter-btn" data-category="Backend">Backend</button>
 
             <!-- SORT DROPDOWN (PUT HERE) -->
-            <select id="sortProjects">
+            <!-- <select id="sortProjects">
                 <option value="default">Sort By</option>
                 <option value="az">A-Z</option>
                 <option value="status">Status</option>
-            </select>
+            </select> -->
         </div>
-
-        <!---Project count--->
-        <p id="project-count" class="mb-3 text-gray-600"></p>
 
         <!-- Dynamic container for projects -->
 
         <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         </div>
+
+        <!---Project count--->
+        <p id="project-count" class="mb-3 text-gray-600"></p>
 
 
     </div>
@@ -267,39 +308,51 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" class="py-24 px-8 lg:px-16">
-    <h2 class="text-4xl lg:text-5xl text-white-700 text-center mb-20">Experience</h2>
+<section id="experience" class="py-24 px-6 bg-white text-black">
 
-    <div class="exp-container">
+  <h2 class="text-4xl lg:text-5xl text-center mb-20 font-bold">
+    Experience
+  </h2>
 
-        <!-- LEFT SIDE (Logo + Company) -->
-        <div class="exp-center">
-            <img src="./assets/abc.jpg" alt="ABC Logo">
-            <h3 class="my-2">ABC</h3>
-            <p>Feb - Present</p>
-        </div>
+  <div class="relative max-w-6xl mx-auto">
 
-        <!-- CENTER LINE -->
-        <div class="exp-line">
-            <span class="dot"></span>
-        </div>
+    <!-- CENTER LINE (FIXED HEIGHT) -->
+    <div class="absolute left-1/2 top-0 transform -translate-x-1/2 h-full w-[2px] bg-gray-700"></div>
 
-        <!-- RIGHT SIDE (Details) -->
-        <div class="exp-right">
-            <h3>MERN Full-Stack Trainee</h3>
-            <p>
-                Built full-stack web applications using MongoDB, Express.js, React.js, and Node.js.
-                Developed REST APIs, implemented secure authentication, and integrated responsive frontends with
-                scalable backend systems while maintaining clean, efficient code.
-            </p>
-        </div>
+    <!-- EXPERIENCE ROW -->
+    <div class="flex items-center justify-between relative z-10">
+
+      <!-- LEFT -->
+      <div class="w-1/3 text-center">
+        <img src="./assets/abc.jpg"
+          class="w-40 h-40 object-contain mx-auto bg-white p-4 rounded-lg shadow-lg">
+
+        <h3 class="text-2xl mt-4 font-semibold">ABC</h3>
+        <p class="text-gray-400">Feb - Present</p>
+      </div>
+
+      <!-- DOT -->
+      <div class="w-1/3 flex justify-center">
+        <div class="w-6 h-6 bg-cyan-400 rounded-full border-4 border-black shadow-[0_0_20px_#22d3ee]"></div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="w-1/3">
+        <h3 class="text-2xl font-semibold mb-4">MERN Stack Developer</h3>
+        <p class="text-gray-300 leading-relaxed">
+          Worked on backend development, API integration, bug fixing, and feature enhancements.
+          Improved system performance and implemented secure admin access using clean coding practices.
+        </p>
+      </div>
 
     </div>
-</section>
 
+  </div>
+
+</section>
 <!-- EDUCATION -->
 <section id="education" class="education-section">
-    <h2 class="section-title">Education</h2>
+    <h2 class="text-4xl lg:text-5xl text-center mb-20 font-bold">Education</h2>
 
     <div class="education-container" id="educationContainer">
         <!-- JS will render here -->
@@ -328,7 +381,7 @@
 
 <section class="py-16 bg-gray-100">
     <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-10">Skills</h2>
+        <h2 class="text-5xl font-bold text-center mb-10">Skills</h2>
 
         <!-- Skills Container -->
         <div id="skills-container" class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center">

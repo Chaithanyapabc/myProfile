@@ -10,7 +10,7 @@ function initDeveloperStatus() {
     const statsData = [
     { label: "GitHub Commits", value: "+500" },
     { label: "LeetCode Problems", value: "+20" },
-    { label: "Projects Completed", value: "4" }
+    { label: "Projects Completed", value: "5" }
 ];
 
     statsContainer.innerHTML = "";

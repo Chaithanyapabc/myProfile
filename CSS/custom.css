@@ -43,7 +43,7 @@ nav a.active {
     font-size: 18px;
     border: none;
     border-radius: 50%;
-    background: #2563eb;
+    background:  rgb(24, 17, 43);
     color: white;
     cursor: pointer;
     display: none;
@@ -52,7 +52,7 @@ nav a.active {
 }
 
 #backToTop:hover {
-    background: #1e40af;
+    background:  rgb(24, 17, 43);
     transform: scale(1.1);
 }
 
@@ -66,9 +66,9 @@ nav a.active {
 }
 
 .filter-btn.active {
-  background: #2563eb;
+  background:  rgb(24, 17, 43);
   color: white;
-  border-color: #2563eb;
+  border-color:  rgb(24, 17, 43);
 }
 
 
@@ -179,8 +179,8 @@ nav a.active {
 
 .education-section {
   padding: 60px 20px;
-  background: #0f172a;
-  color: #fff;
+  background: white;
+  color: black;
 }
 
 .section-title {
@@ -196,7 +196,8 @@ nav a.active {
 }
 
 .education-item {
-  background: #1e293b;
+  background: rgb(24, 17, 43);
+  color:white;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 12px;

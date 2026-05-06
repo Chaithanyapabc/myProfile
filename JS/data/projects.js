@@ -4,39 +4,49 @@ const projectsData = [
     name: "Book My Show Clone",
     category: "MERN",
     description:
-      "A comprehensive movie ticket booking platform featuring a seamless checkout flow, dynamic admin management, and an AI-powered engine for personalized movie suggestions.",
-    technologies: ["ReactJS", "Node.js" , "ExpressJS", "MongoDB"],
+      "Full-stack movie booking app with auth, admin dashboard, and personalized recommendations.",
+    technologies: ["ReactJS", "Node.js", "ExpressJS", "MongoDB"],
     liveDemo: "https://github.com/Chaithanyapabc/MERN_Stu_FebMay26Mys/tree/main/Projects/Guided%20Project/BookMyShowClone",
     github: "https://github.com/Chaithanyapabc/MERN_Stu_FebMay26Mys/tree/main/Projects/Guided%20Project/BookMyShowClone"
   },
   {
     id: 2,
-    name: "Hospital Management System",
-    category: "Frontend",
+    name: "LinkedIn Clone",
+    category: "Backend",
     description:
-      "A fully responsive healthcare platform featuring doctor scheduling, service overviews, and patient inquiry systems with a modern, mobile-first UI.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    liveDemo: "https://github.com/Chaithanyapabc/Hospital-Management-System",
-    github: "https://github.com/Chaithanyapabc/Hospital-Management-System"
+      "A professional networking platform with real-time messaging, post sharing, and user connections.",
+    technologies:["ReactJS", "Node.js", "Express", "MongoDB"],
+    liveDemo: "https://github.com/Chaithanyapabc/MERN_Stu_FebMay26Mys/tree/main/Team%20Project",
+    github: "https://github.com/Chaithanyapabc/MERN_Stu_FebMay26Mys/tree/main/Team%20Project"
   },
   {
     id: 3,
     name: "Portfolio Website",
     category: "Frontend",
     description:
-      "Responsive personal portfolio website showcasing projects, skills, and contact information.",
+      "Modern portfolio showcasing projects, skills, and contact with responsive UI.",
     technologies: ["HTML", "Tailwind CSS", "JavaScript"],
     liveDemo: "https://github.com/Chaithanyapabc/myProfile",
     github: "https://github.com/Chaithanyapabc/myProfile"
   },
   {
     id: 4,
-    name: "AI-Based Emotion Detection and Personalized Song Recomendation System",
-    category: "Frontend , Backend",
+    name: "AI Emotion Detection & Music Recommendation",
+    category: "AI/ML",
     description:
-      "An innovative AI application that uses real-time facial recognition to detect user emotions and provide personalized music recommendations via the Spotify/YouTube API.",
+      "AI app detecting user emotions and recommending music via external APIs.",
     technologies: ["Python", "TensorFlow", "OpenCV", "ReactJS", "Flask"],
     liveDemo: "#",
     github: "#"
-  }
+  },
+  {
+    id: 5,
+    name: "Hospital Management System",
+    category: "Frontend",
+    description:
+      "Responsive healthcare UI with doctor scheduling and patient inquiry features.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveDemo: "https://github.com/Chaithanyapabc/Hospital-Management-System",
+    github: "https://github.com/Chaithanyapabc/Hospital-Management-System"
+  },
 ];

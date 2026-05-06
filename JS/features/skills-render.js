@@ -6,44 +6,48 @@ function renderSkills() {
     return;
   }
 
+  // 🔷 Clear previous content
   skillsContainer.innerHTML = "";
 
   skillsData.forEach((skill) => {
 
-    // 🔷 Decent Professional Card
+    // 🔷 CARD
     const card = document.createElement("div");
     card.className =
-      "w-full max-w-xs p-6 text-center rounded-2xl " +
-      "bg-gradient-to-br from-slate-50 to-cyan-100 " +
-      "border border-cyan-200 shadow-sm " +
-      "hover:shadow-lg hover:-translate-y-1 " +
+      "group w-full max-w-xs p-6 text-center rounded-2xl " +
+      "border border-white/10 shadow-md " +
+      "hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] " +
       "transition-all duration-300";
 
-    // 🔷 Icon Box (Soft Aqua)
+    // Premium dark background
+    card.style.backgroundColor = "rgb(24, 17, 43)";
+
+    // 🔷 ICON BOX (Dynamic: white or black)
     const iconBox = document.createElement("div");
     iconBox.className =
-      "w-14 h-14 mx-auto mb-4 " +
-      "bg-cyan-500 text-white " +
-      "rounded-xl flex items-center justify-center shadow";
+      `w-14 h-14 mx-auto mb-4 ${skill.boxColor || "bg-white text-black"} ` +
+      "rounded-xl flex items-center justify-center shadow-lg " +
+      "transition-transform duration-300 group-hover:rotate-6";
 
-    // 🔷 Icon Text
-    const iconText = document.createElement("span");
-    iconText.className = "text-lg font-bold";
-    iconText.textContent = skill.shortLabel;
+    // 🔷 ICON
+    const icon = document.createElement("i");
+    icon.className = `${skill.icon} text-2xl`;
 
-    iconBox.appendChild(iconText);
+    iconBox.appendChild(icon);
 
-    // 🔷 Skill Name
+    // 🔷 SKILL NAME
     const skillName = document.createElement("h3");
-    skillName.className = "text-lg font-semibold text-gray-800 mb-1";
+    skillName.className =
+      "text-lg font-semibold text-white mb-1 tracking-wide";
     skillName.textContent = skill.name;
 
-    // 🔷 Description
+    // 🔷 DESCRIPTION
     const skillDescription = document.createElement("p");
-    skillDescription.className = "text-sm text-gray-600 leading-relaxed";
+    skillDescription.className =
+      "text-sm text-gray-400 leading-relaxed";
     skillDescription.textContent = skill.description;
 
-    // 🔷 Append Elements
+    // 🔷 APPEND ELEMENTS
     card.appendChild(iconBox);
     card.appendChild(skillName);
     card.appendChild(skillDescription);
@@ -51,8 +55,8 @@ function renderSkills() {
     skillsContainer.appendChild(card);
   });
 
-  console.log("Skills rendered successfully");
+  console.log("✅ Skills rendered successfully");
 }
 
-// Run
+// 🚀 RUN
 renderSkills();
